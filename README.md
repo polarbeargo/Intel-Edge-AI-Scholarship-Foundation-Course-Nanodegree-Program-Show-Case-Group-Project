@@ -14,7 +14,7 @@ Collaborators:
 | [Harkirat Singh](https://github.com/Harkirat155) | Harkirat |
 | [Hsin Wen Chang](https://github.com/Polarbeargo) | Bearbear |
 | [Halwai Aftab Hasan](https://github.com/ahkhalwai) | Halwai Aftab Hasan |
-| [Anshu Trivedi](https://github.com/) | Anshu Trivedi |
+| [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/) | Frida |
 
 # Reference

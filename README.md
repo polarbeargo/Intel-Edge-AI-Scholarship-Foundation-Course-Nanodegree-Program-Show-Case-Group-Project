@@ -1,0 +1,1 @@
+# Intel-Edge-AI-Scholarship-Foundation-Course-Nanodegree-Program-Show-Case-Group-Project

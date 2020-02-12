@@ -17,8 +17,9 @@ Collaborators:
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/) | Frida |
 
-# Reference
+# References
 
 [OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  
 [OpenVino For SmartCity](https://github.com/incluit/OpenVino-For-SmartCity)  
 [TensorFlow Object Counting API - on Colab Version](https://github.com/Polarbeargo/tensorflow_object_counting_api.git)  
+[Udacity OpenVINO Exercise on Colab](https://colab.research.google.com/drive/1xla23daYYbTIfbdHF0nyHzHyoAvVtyaG#scrollTo=niqr_H0TD4Ie&forceEdit=true&sandboxMode=true)

@@ -17,6 +17,22 @@ Collaborators:
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/) | Frida |
 
+---
+
+***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api). And a modified version [repo](https://github.com/Polarbeargo/tensorflow_object_counting_api.git) for run on Google Colab***
+
+---
+## Citation  
+
+    @ONLINE{tfocapi,
+        author = "Ahmet Özlü",
+        title  = "TensorFlow Object Counting API",
+        year   = "2018",
+        url    = "https://github.com/ahmetozlu/tensorflow_object_counting_api"
+    }
+
+## License
+This system is available under the MIT license. See the LICENSE file for more info.
 # References
 
 [OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  

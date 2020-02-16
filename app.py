@@ -2,8 +2,8 @@ import argparse
 import cv2
 from inference import Network
 
-# INPUT_STREAM = "test_video.mp4"
-# CPU_EXTENSION = "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so"
+INPUT_STREAM = "test_video.mp4"
+CPU_EXTENSION = "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so"
 
 def get_args():
     '''
@@ -17,8 +17,8 @@ def get_args():
     ### TODO: Add additional arguments and descriptions for:
     ###       1) Different confidence thresholds used to draw bounding boxes
     ###       2) The user choosing the color of the bounding boxes
-    #c_desc = "The color of the bounding boxes to draw; RED, GREEN or BLUE"
-    #ct_desc = "The confidence threshold to use with the bounding boxes"
+    c_desc = "The color of the bounding boxes to draw; RED, GREEN or BLUE"
+    ct_desc = "The confidence threshold to use with the bounding boxes"
 
     # -- Add required and optional groups
     parser._action_groups.pop()
@@ -29,31 +29,45 @@ def get_args():
     required.add_argument("-m", help=m_desc, required=True)
     optional.add_argument("-i", help=i_desc, default=INPUT_STREAM)
     optional.add_argument("-d", help=d_desc, default='CPU')
-    #optional.add_argument("-c", help=c_desc, default='BLUE')
-    #optional.add_argument("-ct", help=ct_desc, default=0.5)
+    optional.add_argument("-c", help=c_desc, default='BLUE')
+    optional.add_argument("-ct", help=ct_desc, default=0.5)
     args = parser.parse_args()
 
     return args
 
-# def draw_boxes(frame, result, args, width, height):
-#     '''
-#     Draw bounding boxes onto the frame.
-#     '''
-#     for box in result[0][0]: # Output shape is 1x1x100x7
-#         conf = box[2]
-#         if conf >= args.ct:
-#             xmin = int(box[3] * width)
-#             ymin = int(box[4] * height)
-#             xmax = int(box[5] * width)
-#             ymax = int(box[6] * height)
-#             cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), args.c, 1)
-#     return frame
+
+def convert_color(color_string):
+    '''
+    Get the BGR value of the desired bounding box color.
+    Defaults to Blue if an invalid color is given.
+    '''
+    colors = {"BLUE": (255,0,0), "GREEN": (0,255,0), "RED": (0,0,255)}
+    out_color = colors.get(color_string)
+    if out_color:
+        return out_color
+    else:
+        return colors['BLUE']
+
+
+def draw_boxes(frame, result, args, width, height):
+    '''
+    Draw bounding boxes onto the frame.
+    '''
+    for box in result[0][0]: # Output shape is 1x1x100x7
+        conf = box[2]
+        if conf >= args.ct:
+            xmin = int(box[3] * width)
+            ymin = int(box[4] * height)
+            xmax = int(box[5] * width)
+            ymax = int(box[6] * height)
+            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), args.c, 1)
+    return frame
 
 
 def infer_on_video(args):
     # Convert the args for color and confidence
-    #args.c = convert_color(args.c)
-    #args.ct = float(args.ct)
+    args.c = convert_color(args.c)
+    args.ct = float(args.ct)
 
     ### TODO: Initialize the Inference Engine
     plugin = Network()
@@ -107,74 +121,7 @@ def infer_on_video(args):
     out.release()
     cap.release()
     cv2.destroyAllWindows()
-------------------------------------------------------------------------------
 
-# Video Capture RTSP or mp4 file
-INPUT_STREAM = "/content/IMG_7483.mp4"
-video_capture = cv2.VideoCapture(INPUT_STREAM) 
-FILE_OUTPUT = "/content/output.mp4"
-frame_width = int(video_capture.get(3))
-frame_height = int(video_capture.get(4))
-out = cv2.VideoWriter(FILE_OUTPUT,cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), 30,(frame_width, frame_height))
-
-cap = cv2.VideoCapture(INPUT_STREAM)
-
-def infer_on_video(args):
-
-    ### TODO: Initialize the Inference Engine
-    plugin = Network()
-
-    ### TODO: Load the network model into the IE
-    plugin.load_model(args.m, args.d, CPU_EXTENSION)
-    net_input_shape = plugin.get_input_shape()
-
-    with detection_graph.as_default():
-        with tf.Session(graph=detection_graph) as sess:
-            counter = 0
-            while (True):
-                ret, image_np = cap.read()
-                counter += 1
-                if ret:
-                  h = image_np.shape[0]
-                  w = image_np.shape[1]
-
-                  if counter % 1 == 0:
-                    image_np_expanded = np.expand_dims(image_np, axis=0)
-                    image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
-                    boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
-                    scores = detection_graph.get_tensor_by_name('detection_scores:0')
-                    classes = detection_graph.get_tensor_by_name('detection_classes:0')
-                    num_detections = detection_graph.get_tensor_by_name('num_detections:0')
-
-                    (boxes, scores, classes, num_detections) = sess.run(
-                        [boxes, scores, classes, num_detections],
-                        feed_dict={image_tensor: image_np_expanded})
-                    
-                    # Draw bounding box while the score larger than 0.7 and perform count
-                    final_score = np.squeeze(scores)    
-                    count_box = 0
-                    for i in range(100):
-                        if scores is None or final_score[i] > 0.7:
-                            count_box = count_box + 1
-                            
-                    vis_util.visualize_boxes_and_labels_on_image_array(image_np,
-                                                                        np.squeeze(boxes),
-                                                                        np.squeeze(classes).astype(np.int32),
-                                                                        np.squeeze(scores),
-                                                                        category_index,
-                                                                        use_normalized_coordinates=True,
-                                                                        line_thickness=0,
-                                                                        min_score_thresh=0.7)
-                    font = cv2.FONT_HERSHEY_SIMPLEX
-                    cv2.putText(image_np,'Detected Count  = %d'%(count_box),(50,50), font, 1,(200,255,155),2,cv2.LINE_AA)
-                    
-                    out.write(image_np)
-                    print(count_box)
-                else:
-                  break
-    out.release()
-    cap.release()
-    cv2.destroyAllWindows()
 
 def main():
     args = get_args()

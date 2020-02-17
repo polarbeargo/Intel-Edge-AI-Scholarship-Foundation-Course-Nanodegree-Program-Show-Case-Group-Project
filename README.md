@@ -15,7 +15,7 @@ Collaborators:
 | [Hsin Wen Chang](https://github.com/Polarbeargo) | Bearbear |
 | [Halwai Aftab Hasan](https://github.com/ahkhalwai) | Halwai Aftab Hasan |
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
-| [Frida Rode](https://github.com/) | Frida |
+| [Frida Rode](https://github.com/fridarode) | Frida |
 
 ## The Intel OpenVINO Toolkit Model Optimizer Flow Chart  
 ![][image1]  

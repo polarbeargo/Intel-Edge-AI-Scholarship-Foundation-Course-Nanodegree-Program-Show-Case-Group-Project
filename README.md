@@ -51,7 +51,7 @@ TODO
     }
 
 ## License
-This system is available under the MIT license. See the LICENSE file for more info.
+This system is available under the GNU - 3.0 license. See the [LICENSE](https://github.com/Polarbeargo/Intel-Edge-AI-Scholarship-Foundation-Course-Nanodegree-Program-Show-Case-Group-Project/blob/master/LICENSE) file for more info.
 
 ## Perform Statitcs Inference On Video Stream Result
 TODO  

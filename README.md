@@ -17,7 +17,12 @@ Collaborators:
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/fridarode) | Frida |
 
-In this Intel® Edge AI Group showcase project, our goal is to extend our learning experience from Intel® Edge AI Scholarship Foundation Course Nanodegree and Hands-on Implementation import OpenVINO Toolkit, build, compile, load pre-trained models perform model optimization and inference on the video stream integrate with TensorFlow Counting API for Statistics inference Detected object.
+In this Intel® Edge AI Group showcase project, our goal is to extend our learning experience from Intel® Edge AI Scholarship Foundation Course Nanodegree and Hands-on Implementation from:    
+* Import OpenVINO Toolkit, build and compile successfully on Google Colab.  
+* Load pre-trained models.  
+* Perform model optimization.  
+* Integrate with TensorFlow Object Counting API.  
+* Perform statistics inference detected objects on video stream.
 
 ## Load Pre-trained Models   
 TODO

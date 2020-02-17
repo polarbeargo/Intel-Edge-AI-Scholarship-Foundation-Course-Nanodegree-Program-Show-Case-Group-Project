@@ -3,7 +3,7 @@
 Participation in the Intel Edge AI Udacity Scholarship Show Case Group Project  
 * Follow Udacity Git Commit Message Style Guide: https://udacity.github.io/git-styleguide/     
 
-[image1]: ./images/IntelEdgeAIFoundationCourse.png    
+[image1]: ./images/ModelOptimizerFlow.png    
 
 
 Collaborators:  
@@ -17,8 +17,10 @@ Collaborators:
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/) | Frida |
 
----
+## The Intel OpenVINO Toolkit Model Optimizer Flow Chart  
+![][image1]  
 
+--- 
 ***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api). And a modified version [repo](https://github.com/Polarbeargo/tensorflow_object_counting_api.git) for run on Google Colab***
 
 ---

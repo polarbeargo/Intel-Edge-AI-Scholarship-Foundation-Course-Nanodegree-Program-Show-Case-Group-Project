@@ -17,8 +17,19 @@ Collaborators:
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/fridarode) | Frida |
 
-## The Intel OpenVINO Toolkit Model Optimizer Flow Chart  
+In this Intel® Edge AI Group showcase project, our goal is to extend our learning experience from Intel® Edge AI Scholarship Foundation Course Nanodegree and Hands-on Implementation import OpenVINO Toolkit, build, compile, load pre-trained models perform model optimization and inference on the video stream integrate with TensorFlow Counting API for Statistics inference Detected object.
+
+## Load Pre-trained Models   
+TODO
+
+
+## The Intel OpenVINO Toolkit Model Optimizer Flow Chart 
+TODO
 ![][image1]  
+
+
+## Integrate With TensorFlow Object Counting API  
+TODO
 --- 
 ***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api). And a modified version [repo](https://github.com/Polarbeargo/tensorflow_object_counting_api.git) for run on Google Colab***
 
@@ -34,6 +45,10 @@ Collaborators:
 
 ## License
 This system is available under the MIT license. See the LICENSE file for more info.
+
+## Perform Statitcs Inference On Video Stream Result
+TODO  
+
 # References
 
 * [OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  

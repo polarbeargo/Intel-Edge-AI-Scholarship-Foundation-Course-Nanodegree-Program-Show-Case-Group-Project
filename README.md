@@ -19,7 +19,6 @@ Collaborators:
 
 ## The Intel OpenVINO Toolkit Model Optimizer Flow Chart  
 ![][image1]  
-
 --- 
 ***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api). And a modified version [repo](https://github.com/Polarbeargo/tensorflow_object_counting_api.git) for run on Google Colab***
 
@@ -37,7 +36,8 @@ Collaborators:
 This system is available under the MIT license. See the LICENSE file for more info.
 # References
 
-[OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  
-[OpenVino For SmartCity](https://github.com/incluit/OpenVino-For-SmartCity)  
-[TensorFlow Object Counting API - on Colab Version](https://github.com/Polarbeargo/tensorflow_object_counting_api.git)  
-[Udacity OpenVINO Exercise on Colab](https://colab.research.google.com/drive/1xla23daYYbTIfbdHF0nyHzHyoAvVtyaG#scrollTo=niqr_H0TD4Ie&forceEdit=true&sandboxMode=true)
+* [OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  
+* [OpenVino For SmartCity](https://github.com/incluit/OpenVino-For-SmartCity)  
+* [TensorFlow Object Counting API - on Colab Version](https://github.com/Polarbeargo/tensorflow_object_counting_api.git)  
+* [Udacity OpenVINO Exercise on Colab](https://colab.research.google.com/drive/1xla23daYYbTIfbdHF0nyHzHyoAvVtyaG#scrollTo=niqr_H0TD4Ie&forceEdit=true&sandboxMode=true)  
+* [The Intel OpenVINO Toolkit Model Optimizer Flow Chart](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)

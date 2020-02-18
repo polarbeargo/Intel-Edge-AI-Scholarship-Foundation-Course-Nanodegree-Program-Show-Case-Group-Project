@@ -48,8 +48,16 @@ TODO
 TODO
 ---  
 
-### Supported Devices:
+### Supported Devices
 TODO
+The following Intel® hardware devices are supported for optimal performance with the OpenVINO™ Toolkit’s Inference Engine:
+| Device Types  | 
+| ------------- | 
+| CPUs  | 
+| GPUs  |
+| VPUs  | 
+| FPGAs|
+
 ---
 ## Integrate With TensorFlow Object Counting API  
 --- 
@@ -85,3 +93,4 @@ TODO
 * [TensorFlow Object Counting API - on Colab Version](https://github.com/Polarbeargo/tensorflow_object_counting_api.git)  
 * [Udacity OpenVINO Exercise on Colab](https://colab.research.google.com/drive/1xla23daYYbTIfbdHF0nyHzHyoAvVtyaG#scrollTo=niqr_H0TD4Ie&forceEdit=true&sandboxMode=true)  
 * [The Intel OpenVINO Toolkit Model Optimizer Flow Chart](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)
+* [Supported Devices](https://docs.openvinotoolkit.org/latest/_docs_IE_DG_supported_plugins_Supported_Devices.html)

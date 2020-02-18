@@ -97,4 +97,5 @@ TODO
 * [TensorFlow Object Counting API - on Colab Version](https://github.com/Polarbeargo/tensorflow_object_counting_api.git)  
 * [Udacity OpenVINO Exercise on Colab](https://colab.research.google.com/drive/1xla23daYYbTIfbdHF0nyHzHyoAvVtyaG#scrollTo=niqr_H0TD4Ie&forceEdit=true&sandboxMode=true)  
 * [The Intel OpenVINO Toolkit Model Optimizer Flow Chart](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)
-* [Supported Devices](https://docs.openvinotoolkit.org/latest/_docs_IE_DG_supported_plugins_Supported_Devices.html)
+* [Supported Devices](https://docs.openvinotoolkit.org/latest/_docs_IE_DG_supported_plugins_Supported_Devices.html)  
+* [ TensorFlow Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)

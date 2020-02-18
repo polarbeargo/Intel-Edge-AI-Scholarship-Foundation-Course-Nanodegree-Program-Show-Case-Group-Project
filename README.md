@@ -35,22 +35,22 @@ TODO
 * Before running the demo with a trained model, make sure the model is converted to the Inference Engine format (*.xml + *.bin) using [The Model Optimizer](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)
 
 ## The Intel OpenVINO Toolkit Model Optimizer Flow Chart 
-TODO  
-
+ In this project, we feed the model into the Model Optimizer, and get the Intermediate Representation. The frozen models will need TensorFlow-specific parameters like `--tensorflow_use_custom_operations_config` and `--tensorflow_object_detection_api_pipeline_config`. Also, `--reverse_input_channels` is usually needed, as TF model zoo models are trained on RGB images, while OpenCV usually loads as BGR. Certain models, like YOLO, DeepSpeech, and more, have their own separate pages.
 ![][image1]  
 ### Quantization
-TODO
+
+* Quantization is the process of reducing the precision of a model. In the deep learning research field, the predominant numerical format used for research and for deployment has so far been 32-bit floating point, or FP32. However, the desire for reduced bandwidth and computational energy consumption of deep learning models has driven research into using lower-precision numerical formats. It has been extensively demonstrated that weights and activations can be represented using INT8 without incurring significant loss in accuracy. The use of even lower bit-widths, such as 4/2/1-bits, is an active field of research that has also shown great progress. 
+* The OpenVINO™ Toolkit, models usually default to FP32, or 32-bit floating point values, while FP16 and INT8, for 16-bit floating point and 8-bit integer values, are also available (INT8 is only currently available in the Pre-Trained Models; the Model Optimizer does not currently support that level of precision). FP16 and INT8 will lose some accuracy, but the model will be smaller in memory and compute times faster. Therefore, quantization is a common method used for running models at the edge.
+
+| INT8 Operation | Energy Saving vs FP32 | Area Saving vs FP32 |
+| :---         |     :---:      |          ---: |
+| Add   | 30x     | 116x    |
+| Multiply     | 18.5x      | 27x      |  
+
 ---
-TODO
-### Freezing
-TODO
----
-### Fusion
-TODO
----  
 
 ### Supported Devices
-TODO
+
 The following Intel® hardware devices are supported for optimal performance with the OpenVINO™ Toolkit’s Inference Engine:
 | Device Types  | 
 | ------------- | 

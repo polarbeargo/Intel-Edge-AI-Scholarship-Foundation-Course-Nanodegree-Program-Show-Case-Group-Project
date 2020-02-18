@@ -38,14 +38,14 @@ TODO
 TODO  
 
 ![][image1]  
-### Quantization: 
+### Quantization
 TODO
 ---
 TODO
-### Freezing:
+### Freezing
 TODO
 ---
-### Fusion:
+### Fusion
 TODO
 ---  
 
@@ -67,12 +67,12 @@ The following Intel® hardware devices are supported for optimal performance wit
 ---
 ### TensorFlow Object Counting API  Work Flow
 ![][image6]
-### System Architecture:  
+### System Architecture  
 ![][image2] 
 
-### Object Tracking Flow Chart:
+### Object Tracking Flow Chart
 ![][image3] 
-### Model:  
+### Model  
 ![][image4] 
 ## Citation  
 

@@ -35,7 +35,8 @@ TODO
 * Before running the demo with a trained model, make sure the model is converted to the Inference Engine format (*.xml + *.bin) using [The Model Optimizer](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)
 
 ## The Intel OpenVINO Toolkit Model Optimizer Flow Chart 
- In this project, we feed the model into the Model Optimizer, and get the Intermediate Representation. The frozen models will need TensorFlow-specific parameters like `--tensorflow_use_custom_operations_config` and `--tensorflow_object_detection_api_pipeline_config`. Also, `--reverse_input_channels` is usually needed, as TF model zoo models are trained on RGB images, while OpenCV usually loads as BGR. Certain models, like YOLO, DeepSpeech, and more, have their own separate pages.
+ In this project, we feed the model into the Model Optimizer, and get the Intermediate Representation. The frozen models will need TensorFlow-specific parameters like `--tensorflow_use_custom_operations_config` and `--tensorflow_object_detection_api_pipeline_config`. Also, `--reverse_input_channels` is usually needed, as TF model zoo models are trained on RGB images, while OpenCV usually loads as BGR. Certain models, like YOLO, DeepSpeech, and more, have their own separate pages.  
+ 
 ![][image1]  
 ### Quantization
 
@@ -72,7 +73,7 @@ The following Intel® hardware devices are supported for optimal performance wit
 
 ### Object Tracking Flow Chart
 ![][image3] 
-### Model  
+### Model Architecture 
 ![][image4] 
 ## Citation  
 

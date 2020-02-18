@@ -4,7 +4,10 @@ Participation in the Intel Edge AI Udacity Scholarship Show Case Group Project
 * Follow Udacity Git Commit Message Style Guide: https://udacity.github.io/git-styleguide/     
 
 [image1]: ./images/ModelOptimizerFlow.png    
-
+[image2]: ./images/TensorFlowObjectCountingAPI.jpg 
+[image3]: ./images/VideoTrackingFlow.png 
+[image4]: ./images/SSDWithMobilenet.png
+[image5]: ./images/result.gif
 
 Collaborators:  
 
@@ -31,16 +34,35 @@ TODO
 * Before running the demo with a trained model, make sure the model is converted to the Inference Engine format (*.xml + *.bin) using [The Model Optimizer](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)
 
 ## The Intel OpenVINO Toolkit Model Optimizer Flow Chart 
-TODO
+TODO  
+
 ![][image1]  
-
-
-## Integrate With TensorFlow Object Counting API  
+### Quantization: 
 TODO
+---
+TODO
+### Freezing:
+TODO
+---
+### Fusion:
+TODO
+---  
+
+### Supported Devices:
+TODO
+---
+## Integrate With TensorFlow Object Counting API  
 --- 
 ***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api). And a modified version [repo](https://github.com/Polarbeargo/tensorflow_object_counting_api.git) for run on Google Colab***
 
 ---
+### System Architecture:  
+![][image2] 
+
+### Object Tracking Flow Chart:
+![][image3] 
+### Model:  
+![][image4] 
 ## Citation  
 
     @ONLINE{tfocapi,

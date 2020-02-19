@@ -87,9 +87,9 @@ The following Intel® hardware devices are supported for optimal performance wit
 ## License
 This system is available under the GNU - 3.0 license. See the [LICENSE](https://github.com/Polarbeargo/Intel-Edge-AI-Scholarship-Foundation-Course-Nanodegree-Program-Show-Case-Group-Project/blob/master/LICENSE) file for more info.
 
-## Perform Statitcs Inference On Video Stream Result
-TODO  
-
+## Perform Statistics Inference On Video Stream Result
+TODO   
+![][image5]  
 # References
 
 * [OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  

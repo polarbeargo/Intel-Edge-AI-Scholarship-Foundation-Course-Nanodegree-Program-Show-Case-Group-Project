@@ -29,7 +29,6 @@ Our story start from trying to mitigation traffic jam in every city globally. In
 * Perform statistics inference detected objects on video stream.
 
 ## Load Pre-trained Models   
-TODO
 
 *  You can use public or pre-trained models. To download the pre-trained models, use the Tensorflow Model Downloader or go to [PreTrain Model Download](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz)
 * Before running the demo with a trained model, make sure the model is converted to the Inference Engine format (*.xml + *.bin) using [The Model Optimizer](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)

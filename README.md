@@ -72,6 +72,7 @@ The following Intel® hardware devices are supported for optimal performance wit
 ![][image2] 
 
 ### Object Tracking Flow Chart
+In this section, we use what we learn from The Intel® Edge AI Scholarship Foundation Course Nanodegree Lesson 5 Deploying an edge app section 4 Handling Input Streams implement 'cv2.VideoCapture' lifecycle and 'cv2.VideoWriter' fulfilled Object Tracking and count detected Objects work flow.  
 ![][image3] 
 ### Model Architecture  
 In here, we use the Single Shot Detector with MobileNet from [ TensorFlow Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). SSD is designed for object detection in real-time. SSD speeds up the process by eliminating the need of the region proposal network. SSD applies multi-scale features and default boxes to recover the drop in accuracy. These improvements allow SSD to match the Faster R-CNN’s accuracy using lower resolution images thus pushes the speed higher.
@@ -90,7 +91,8 @@ In here, we use the Single Shot Detector with MobileNet from [ TensorFlow Detect
 This system is available under the GNU - 3.0 license. See the [LICENSE](https://github.com/Polarbeargo/Intel-Edge-AI-Scholarship-Foundation-Course-Nanodegree-Program-Show-Case-Group-Project/blob/master/LICENSE) file for more info.
 
 ## Perform Statistics Inference On Video Stream Result
-TODO 
+TODO  
+
 ![][image5]  
 # References
 

@@ -93,7 +93,7 @@ In here, we use the Single Shot Detector with MobileNet from [ TensorFlow Detect
 This system is available under the GNU - 3.0 license. See the [LICENSE](https://github.com/Polarbeargo/Intel-Edge-AI-Scholarship-Foundation-Course-Nanodegree-Program-Show-Case-Group-Project/blob/master/LICENSE) file for more info.
 
 ## Perform Statistics Inference On Video Stream Result
-TODO  
+The following is our current progress status to perform statistics inference on video stream. 
 ![][image5] 
 ## Future Work
 In this project, we successfully perform statistics inference detected objects on the video stream to inform traffic status in real-time. The next step we will implement the part to detect car accident through surveillance camera systems and throw alert in real-time inform the need of to mitigation traffic route can be applicable in every city globally.  

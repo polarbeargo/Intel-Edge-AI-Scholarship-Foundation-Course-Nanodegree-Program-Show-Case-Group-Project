@@ -21,7 +21,7 @@ Collaborators:
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/fridarode) | Frida |
 
-In this Intel® Edge AI Group showcase project, our goal is to extend our learning experience from Intel® Edge AI Scholarship Foundation Course Nanodegree and Hands-on Implementation from:    
+Our story start from trying to mitigation traffic jam in every city. In the early stage perform statistics inference detected objects on the video stream to inform traffic status in real-time. In this Intel® Edge AI Group showcase project, our goal is to extend our learning experience from Intel® Edge AI Scholarship Foundation Course Nanodegree and Hands-on Implementation as follow:    
 * Import OpenVINO Toolkit, build and compile successfully on Google Colab.  
 * Load pre-trained models.  
 * Perform model optimization.  
@@ -93,8 +93,10 @@ This system is available under the GNU - 3.0 license. See the [LICENSE](https://
 
 ## Perform Statistics Inference On Video Stream Result
 TODO  
+![][image5] 
+## Future Work
+In this project, we successfully perform statistics inference detected objects on the video stream to inform traffic status in real-time. The next step we will implement the part to detect car accident through surveillance camera systems and throw alert in real-time inform the need of to mitigation traffic route can be applicable in every city.  
 
-![][image5]  
 # References
 
 * [OpenVINO on Colab](https://github.com/alihussainia/OpenDevLibrary)  

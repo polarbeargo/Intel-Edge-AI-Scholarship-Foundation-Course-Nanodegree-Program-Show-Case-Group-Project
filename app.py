@@ -2,8 +2,9 @@ import argparse
 import cv2
 from inference import Network
 
-INPUT_STREAM = "test_video.mp4"
+INPUT_STREAM = "/content/MVI_6835.mp4"
 CPU_EXTENSION = "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so"
+FILE_OUTPUT = "/content/output.mp4"
 
 def get_args():
     '''
@@ -30,7 +31,7 @@ def get_args():
     optional.add_argument("-i", help=i_desc, default=INPUT_STREAM)
     optional.add_argument("-d", help=d_desc, default='CPU')
     optional.add_argument("-c", help=c_desc, default='BLUE')
-    optional.add_argument("-ct", help=ct_desc, default=0.5)
+    optional.add_argument("-ct", help=ct_desc, default=0.7)
     args = parser.parse_args()
 
     return args
@@ -87,7 +88,7 @@ def infer_on_video(args):
     # Create a video writer for the output video
     # The second argument should be `cv2.VideoWriter_fourcc('M','J','P','G')`
     # on Mac, and `0x00000021` on Linux
-    out = cv2.VideoWriter('out.mp4', 0x00000021, 30, (width,height))
+    out = cv2.VideoWriter(FILE_OUTPUT,cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), 30,(width, height))
 
     # Process frames until the video ends, or process is exited
     while cap.isOpened():

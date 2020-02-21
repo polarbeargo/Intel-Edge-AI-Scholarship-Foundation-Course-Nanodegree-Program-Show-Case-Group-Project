@@ -9,6 +9,7 @@ Participation in the Intel Edge AI Udacity Scholarship Show Case Group Project
 [image4]: ./images/SSDWithMobilenet.png
 [image5]: ./images/result.gif
 [image6]: ./images/Flow.png
+[image7]: ./images/resultInTaipeiCity.gif
 
 Collaborators:  
 
@@ -94,6 +95,7 @@ This system is available under the GNU - 3.0 license. See the [LICENSE](https://
 ## Perform Statistics Inference On Video Stream Result
 The following is our current progress status to perform statistics inference on video stream. 
 ![][image5] 
+![ Result in Taipei City][image7]
 ## Future Work
 In this project, we successfully perform statistics inference detected objects on the video stream to inform traffic status in real-time. The next step we will implement the part to detect car accident through surveillance camera systems and throw alert in real-time inform the need of to mitigation traffic route can be applicable in every city globally.  
 

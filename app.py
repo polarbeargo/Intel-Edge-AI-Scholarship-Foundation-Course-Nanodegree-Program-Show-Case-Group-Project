@@ -1,10 +1,24 @@
 import argparse
 import cv2
 from inference import Network
+import tensorflow as tf
 
-INPUT_STREAM = "/content/MVI_6835.mp4"
+# Object detection imports
+from utils import backbone
+from api import object_counting_api
+
+
+INPUT_STREAM = "./MVI_6835.mp4"
 CPU_EXTENSION = "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so"
 FILE_OUTPUT = "/content/output.mp4"
+
+# By default I use an "SSD with Mobilenet" model here. See the detection model zoo (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) for a list of other models that can be run out-of-the-box with varying speeds and accuracies.
+detection_graph, category_index = backbone.set_model('ssd_mobilenet_v1_coco_2018_01_28', 'mscoco_label_map.pbtxt')
+
+targeted_objects = "person, bicycle, bus, car, motorcycle, airplane, train, truck, boat, traffic light, fire hydrant, stop sign, parking meter, book, cell phone, laptop, wine glass, bottle, handbag, cat, dog, bird" # (for counting targeted objects) change it with your targeted objects
+is_color_recognition_enabled = 0
+
+object_counting_api.targeted_object_counting(INPUT_STREAM, detection_graph, category_index, is_color_recognition_enabled, targeted_objects) # targeted objects counting
 
 def get_args():
     '''

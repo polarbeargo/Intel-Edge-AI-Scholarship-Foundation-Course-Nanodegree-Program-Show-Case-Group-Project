@@ -13,7 +13,8 @@ Participation in the Intel Edge AI Udacity Scholarship Show Case Group Project
 [image8]: ./images/TaipeiOutput.gif
 [image9]: ./images/output.gif
 [image10]: ./images/IndiaOutput.gif
-#[image11]: ./images/TaipeiOutput.gif
+[image11]: ./images/indoutput.gif
+
 Collaborators:  
 
 | Name | Slack Name |
@@ -102,7 +103,7 @@ General Count                      | Multi class count
 :-------------------------:|:-------------------------:
 ![][image5]                | ![][image9] 
 ![ Result in Taipei City][image7] | ![][image8] 
-![ Result in India] | ![][image10]
+![ Result in India][image11] | ![][image10]
 
 ## Future Work
 In this project, we successfully perform statistics inference detected objects on the video stream to inform traffic status in real-time. The next step we will implement the part to detect car accident through surveillance camera systems and throw alert in real-time inform the need of to mitigation traffic route can be applicable in every city globally.  

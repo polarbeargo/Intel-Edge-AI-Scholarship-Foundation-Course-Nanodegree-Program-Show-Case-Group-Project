@@ -114,3 +114,4 @@ In this project, we successfully perform statistics inference detected objects o
 * [The Intel OpenVINO Toolkit Model Optimizer Flow Chart](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_Deep_Learning_Model_Optimizer_DevGuide.html)
 * [Supported Devices](https://docs.openvinotoolkit.org/latest/_docs_IE_DG_supported_plugins_Supported_Devices.html)  
 * [ TensorFlow Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+* [MIT xPRO - Tackling the Challenges of Big Data](https://mitxpro.mit.edu/courses/course-v1:MITProfessionalX+6.BDX+T3_2016/about)

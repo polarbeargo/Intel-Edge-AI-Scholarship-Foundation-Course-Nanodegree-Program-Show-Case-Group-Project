@@ -102,10 +102,8 @@ The following is our current progress status to perform statistics inference on 
 General Count                      | Multi class count
 :-------------------------:|:-------------------------:
 ![][image5]                | ![][image9] |
-|--------------------------|--------------------------|
 ![ Result in Taipei City][image7] | ![][image8] |
-|--------------------------|--------------------------|
-![ Result in India][image11] | ![][image10] |
+
 
 ## Future Work
 In this project, we successfully perform statistics inference detected objects on the video stream to inform traffic status in real-time. The next step we will implement the part to detect car accident through surveillance camera systems and throw alert in real-time inform the need of to mitigation traffic route can be applicable in every city globally.  

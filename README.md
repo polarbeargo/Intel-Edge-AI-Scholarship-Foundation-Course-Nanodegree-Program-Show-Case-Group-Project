@@ -103,10 +103,8 @@ General Count                      | Multi class count
 :-------------------------:|:-------------------------:
 ![][image5]                | ![][image9] |
 Result in Taipei City                     
-:-------------------------:|:-------------------------:
 ![Result in Taipei City][image7] | ![Result in Taipei City][image8] |
 Result in India                     
-:-------------------------:|:-------------------------:
 ![Result in India][image11] | ![Result in India][image10] |
 
 

@@ -96,15 +96,16 @@ In here, we use the Single Shot Detector with MobileNet from [ TensorFlow Detect
 ## License
 This system is available under the GNU - 3.0 license. See the [LICENSE](https://github.com/Polarbeargo/Intel-Edge-AI-Scholarship-Foundation-Course-Nanodegree-Program-Show-Case-Group-Project/blob/master/LICENSE) file for more info.
 
-## Perform Statistics Inference On Video Stream Result
+## Perform Statistics Inference On Video Stream Results
 The following is our current progress status to perform statistics inference on video stream. 
 
 General Count                      | Multi class count
 :-------------------------:|:-------------------------:
+Barcelona
 ![][image5]                | ![][image9] |
-Result in Taipei City                     
+Taipei City                     
 ![Result in Taipei City][image7] | ![Result in Taipei City][image8] |
-Result in India                     
+India                     
 ![Result in India][image11] | ![Result in India][image10] |
 
 

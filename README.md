@@ -22,7 +22,7 @@ Collaborators:
 | [Sarah Majors](https://github.com/sfmajors373) | Sarah Majors | 
 | [Harkirat Singh](https://github.com/Harkirat155) | Harkirat |
 | [Hsin Wen Chang](https://github.com/Polarbeargo) | Bearbear |
-| [Halwai Aftab Hasan](https://github.com/ahkhalwai) | Halwai Aftab Hasan |
+| [Halwai Aftab Hasan](https://github.com/ahkhalwai) | aftab |
 | [Anshu Trivedi](https://github.com/AnshuTrivedi) | Anshu Trivedi |
 | [Frida Rode](https://github.com/fridarode) | Frida |
 

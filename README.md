@@ -30,7 +30,7 @@ Our story start from trying to mitigation traffic jam in every city globally. In
 * Import OpenVINO Toolkit, build and compile successfully on Google Colab.  
 * Load pre-trained models.  
 * Perform model optimization.  
-* Integrate with TensorFlow Object Counting(TOC) API, the TOC API is the object detection implementation that runs and infers using the tensorflow models at the backend; and is optimised to run at edge using openvino toolkit from Intel.  
+* Integrate with TensorFlow Object Counting(TOC) API, the TOC API is the object detection implementation that runs and infers using the TensorFlow models at the backend; and is optimized to run at the edge using OpenVINO toolkit from Intel.  
 * Perform statistics inference detected objects on video stream.
 
 ## Load Pre-trained Models   
